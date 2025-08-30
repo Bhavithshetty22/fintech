@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  DollarSign, 
   TrendingUp, 
   Shield, 
   Smartphone, 
@@ -58,22 +57,22 @@ const LandingPage = () => {
   ];
 
   const howItWorksData = [
-  {
-    icon: <Download className="w-8 h-8 text-white" />,
-    title: "Download & Sign Up",
-    description: "Get started in minutes with our simple registration process"
-  },
-  {
-    icon: <Link2 className="w-8 h-8 text-white" />,
-    title: "Connect Your Accounts",
-    description: "Securely link your bank accounts and credit cards"
-  },
-  {
-    icon: <BarChart3 className="w-8 h-8 text-white" />,
-    title: "Track & Optimize",
-    description: "Watch your financial health improve with smart insights"
-  }
-];
+    {
+      icon: <Download className="w-8 h-8 text-white" />,
+      title: "Download & Sign Up",
+      description: "Get started in minutes with our simple registration process"
+    },
+    {
+      icon: <Link2 className="w-8 h-8 text-white" />,
+      title: "Connect Your Accounts",
+      description: "Securely link your bank accounts and credit cards"
+    },
+    {
+      icon: <BarChart3 className="w-8 h-8 text-white" />,
+      title: "Track & Optimize",
+      description: "Watch your financial health improve with smart insights"
+    }
+  ];
 
   const testimonialsData = [
     {
@@ -124,7 +123,6 @@ const LandingPage = () => {
                 Start Free Trial
                 <TrendingUp className="ml-2 w-5 h-5" />
               </Button>
-             
             </div>
           </div>
         </div>
@@ -178,27 +176,26 @@ const LandingPage = () => {
       </section>
 
       {/* How It Works Section */}
-     <section className="py-24 bg-gradient-to-r from-blue-950/50 to-slate-950/50 backdrop-blur-sm">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-20">
-          Get Started in <span className="text-blue-400">3 Simple Steps</span>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {howItWorksData.map((step, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-           
-                {step.icon}
+      <section className="py-24 bg-gradient-to-r from-blue-950/50 to-slate-950/50 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-20">
+            Get Started in <span className="text-blue-400">3 Simple Steps</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {howItWorksData.map((step, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                  {step.icon}
+                </div>
+                <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-blue-300 transition-colors">
+                  {step.title}
+                </h3>
+                <p className="text-blue-200 text-lg leading-relaxed max-w-sm mx-auto">{step.description}</p>
               </div>
-              <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-blue-300 transition-colors">
-                {step.title}
-              </h3>
-              <p className="text-blue-200 text-lg leading-relaxed max-w-sm mx-auto">{step.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-24 relative">
@@ -264,8 +261,6 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-     
     </div>
   );
 };
