@@ -221,7 +221,10 @@ const LandingPage = () => {
                       <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <p className="text-blue-100 text-lg leading-relaxed italic">"{testimonial.quote}"</p>
+                 <p className="text-blue-100 text-lg leading-relaxed italic">
+  &ldquo;{testimonial.quote}&rdquo;
+</p>
+
                 </CardContent>
               </Card>
             ))}
