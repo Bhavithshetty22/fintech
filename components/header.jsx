@@ -16,14 +16,11 @@ const Header = () => {
         <Link href="/">
         <div className="flex items-center gap-3">
   {/* Monogram */}
-  <div className="relative grid place-items-center w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-400 shadow-lg shadow-blue-900/30">
-    <span className="text-white font-black text-lg">F</span>
-    <span className="absolute inset-0 rounded-2xl ring-1 ring-white/20" />
-  </div>
+ 
   {/* Wordmark */}
   <h1 className="text-2xl font-bold tracking-tight text-white/90">
-    <span className="text-white">Fin</span>
-    <span className="text-blue-300">tech</span>
+    <span className="text-white">Budget</span>
+    <span className="text-blue-300">Beacon</span>
   </h1>
 </div>
 
@@ -57,13 +54,7 @@ const Header = () => {
             </Link>
 
             {/* Chatbot Button */}
-            <Button
-              onClick={() => chatbotRef.current?.toggle()} // Use the ref method instead of setChatOpen
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 text-white flex items-center gap-2"
-            >
-              <MessageCircle size={18} />
-              <span className="hidden md:inline">Chatbot</span>
-            </Button>
+           
           </SignedIn>
 
           <SignedOut>

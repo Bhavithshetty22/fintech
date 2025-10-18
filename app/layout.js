@@ -8,10 +8,10 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Welth",
+  title: "BudgetBeacon",
   description: "One stop Finance Platform",
   icons: {
-    icon: "/logo-sm.png", // ✅ handles your favicon
+    icon: "/", // ✅ handles your favicon
   },
 };
 
